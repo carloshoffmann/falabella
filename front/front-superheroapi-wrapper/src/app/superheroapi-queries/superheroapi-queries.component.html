@@ -1,0 +1,27 @@
+
+<div class="row">
+   <div class="col">
+      <b>Buscar</b>&nbsp;&nbsp;&nbsp; <input type="text" [(ngModel)]="search_text" (change)="getData(1)" />
+   </div>
+</div>
+
+<hr />
+<img *ngIf="loading" src="/assets/478.gif">
+
+<table *ngIf="!loading" class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Bando</th>
+            <th>Puntaje</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let r of records">
+            <td>{{ r.name }}</td>
+            <td>{{ r.biography.publisher }}</td>
+            <td>{{ r.points }}</td>
+        </tr>
+    </tbody>
+</table>
+

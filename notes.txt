@@ -1,0 +1,66 @@
+1. PI API
+
+   1.1 Crea una API que reciba tenga un método:
+      - GET: recibe un parametro de entrada que calcula un número random entre (parametro/2 y el
+               parametro). Luego deberás calcular los decimales del pi considerando el número random
+      - Ejemplo
+      
+      Ej:
+      
+      1. Request: /pi/?random_limit=10 (el número random fue calculado en 5)
+         Salida: PiCalc": “3.14159"
+      2. Request: /pi/?random_limit=10 (el número random fue calculado en 10)
+         Salida: PiCalc": “3.141592654"
+      3. Request: /pi/?random_limit=10 (el número random fue calculado en 9)
+         Salida: PiCalc": “3.14159265”
+
+   1.2. Crea todos los elementos necesarios para asegurar la calidad técnica de tu API. Un
+      punto de partida sería crear, al menos, los test unitarios. Suma tantos elementos como estimes
+      convenlente
+
+
+2. SuperHeroes APP
+
+   Contruye una aplicación web sencilla que te permita obtener información sobre super heroes.
+   Toma como referencia la api : https://superheroapi.com/ . (Hint: usa JSONP o configura un
+   servidor proxy para evitar el problema por CORS).
+
+   Construye las siguientes funcionalidades:
+      - Mostrar un listado de superheroes en una grilla (usa a batman como valor por defecto). En la
+         grilla muestra: su nombre, su bando y su puntaje
+      - Buscar superheroes por su nombre
+      
+Entregable:
+
+   Repositorio con código fuente y readme que mencione todo lo necesario para levantar las
+   aplicaciones
+
+
+
+-------------------------------------------------------------------------------------------
+
+
+https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
+
+https://superheroapi.com/
+
+token 10157363979846643
+
+valor por default: "batman"
+
+https://superheroapi.com/api/10157363979846643/search/name
+
+
+
+https://superheroapi.com/api/10157363979846643/search/name
+
+
+Ethan Hunt      245
+
+https://superheroapi.com/api/10157363979846643/245/powerstats
+
+
+curl --location --request GET 'https://api.heroes.bigstickcarpet.com' --header 'Accept: application/json'
+curl --request POST https://superheroapi.com/api/10157363979846643/search/ironman 
+
+
