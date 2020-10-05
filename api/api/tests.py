@@ -8,12 +8,14 @@ class PiTestCase(TestCase):
       return
 
    def test_calcPi(self):
-      """possible inputs and expected answers for f test case assert Equal.unction calcPi"""
+      """possible inputs and expected answers for f test case assert Equal.function calcPi"""
+
       self.assertEqual(calcPiWrapper("TEXTO"), "")
       self.assertEqual(calcPiWrapper(-1), "")
       self.assertEqual(calcPiWrapper(0), "3.")
       self.assertEqual(calcPiWrapper(1), "3.1")
       self.assertEqual(calcPiWrapper(2), "3.14")
+      
       #from app requirements
       self.assertEqual(calcPiWrapper(5), "3.14159")
       self.assertEqual(calcPiWrapper(9), "3.141592653")
