@@ -1,8 +1,8 @@
 # Instalación
 
-`` pip install -r requirements.txt
-python manage.py migrate
-python manage.pu runserver ``
+`` pip install -r requirements.txt ``
+`` python manage.py migrate ``
+``python manage.pu runserver ``
 
 # Ejecución de tests
 
@@ -10,6 +10,7 @@ python manage.pu runserver ``
 
 # Configuración NginX
 
+``
    location / {
       if ($request_method = 'OPTIONS') {
         add_header 'Access-Control-Allow-Methods' 'GET,PUT,POST,DELETE,PATCH,OPTIONS';
@@ -41,6 +42,6 @@ python manage.pu runserver ``
    }
 
 
-
+``
 
 
