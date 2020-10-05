@@ -1,19 +1,14 @@
-Requerimientos
+# Instalación
 
-Instalación
+`` pip install -r requirements.txt
+python manage.py migrate
+python manage.pu runserver ``
 
-   pip install -r requirements.txt
-
-   python manage.py migrate
-
-   python manage.pu runserver
-
-
-Ejecución de tests
+# Ejecución de tests
 
    python manage.py test
 
-Configuración NginX
+# Configuración NginX
 
    location / {
       if ($request_method = 'OPTIONS') {
