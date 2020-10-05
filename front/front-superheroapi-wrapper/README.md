@@ -2,5 +2,10 @@
 
 # Instalación y ejecución.
 
+```
 npm i
+```
+
+```
 npm run start
+```
