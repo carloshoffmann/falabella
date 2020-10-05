@@ -14,7 +14,7 @@ class PiTestCase(TestCase):
       self.assertEqual(calcPiWrapper(0), "3.")
       self.assertEqual(calcPiWrapper(1), "3.1")
       self.assertEqual(calcPiWrapper(2), "3.14")
-      #from requirements
+      #from app requirements
       self.assertEqual(calcPiWrapper(5), "3.14159")
       self.assertEqual(calcPiWrapper(9), "3.141592653")
       self.assertEqual(calcPiWrapper(10), "3.1415926535")
