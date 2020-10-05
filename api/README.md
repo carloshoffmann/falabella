@@ -1,8 +1,11 @@
 # Instalación
 
-`` pip install -r requirements.txt ``
-`` python manage.py migrate ``
-``python manage.pu runserver ``
+`` pip install -r requirements.txt
+
+`` python manage.py migrate
+
+`` python manage.pu runserver
+
 
 # Ejecución de tests
 
@@ -10,8 +13,8 @@
 
 # Configuración NginX
 
-``
-   location / {
+``` 
+location / {
       if ($request_method = 'OPTIONS') {
         add_header 'Access-Control-Allow-Methods' 'GET,PUT,POST,DELETE,PATCH,OPTIONS';
         add_header 'Access-Control-Allow-Headers' 'Access-Control-Allow-Headers,Authorization';
@@ -40,8 +43,6 @@
       proxy_set_header Access-Control-Expose-Headers 'Authorization';
       proxy_pass http://127.0.0.1:8000;
    }
-
-
-``
+```
 
 
